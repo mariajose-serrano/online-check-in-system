@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palacio Velarde — Hotel Boutique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">
+      <span class="nav__logo-symbol">✦</span>
+      <span class="nav__logo-name">Palacio Velarde</span>
+    </div>
+    <ul class="nav__links">
+      <li><a href="#habitaciones">Habitaciones</a></li>
+      <li><a href="#experiencias">Experiencias</a></li>
+      <li><a href="#gastronomia">Gastronomía</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a href="#reservar" class="nav__cta">Reservar</a>
+    <button class="nav__burger" id="burger" aria-label="Menú">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#habitaciones">Habitaciones</a></li>
+      <li><a href="#experiencias">Experiencias</a></li>
+      <li><a href="#gastronomia">Gastronomía</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#reservar" class="mobile-menu__cta">Reservar ahora</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg">
+      <div class="hero__overlay"></div>
+      <div class="hero__canvas" id="hero-canvas"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__label">Marbella · Andalucía · Est. 1924</p>
+      <h1 class="hero__title">
+        Donde el<br />
+        <em>tiempo</em><br />
+        se detiene
+      </h1>
+      <p class="hero__desc">Un palacete del siglo XVIII restaurado con mimo. Veinticuatro suites únicas entre jardines
+        centenarios y el susurro del Mediterráneo.</p>
+      <div class="hero__actions">
+        <a href="#reservar" class="btn btn--primary">Reservar estancia</a>
+        <a href="#habitaciones" class="btn btn--ghost">Descubrir →</a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- NUMEROS -->
+  <section class="numbers">
+    <div class="numbers__grid">
+      <div class="numbers__item">
+        <span class="numbers__value">24</span>
+        <span class="numbers__label">Suites únicas</span>
+      </div>
+      <div class="numbers__item">
+        <span class="numbers__value">1924</span>
+        <span class="numbers__label">Fundación</span>
+      </div>
+      <div class="numbers__item">
+        <span class="numbers__value">5★</span>
+        <span class="numbers__label">Gran Lujo</span>
+      </div>
+      <div class="numbers__item">
+        <span class="numbers__value">2ha</span>
+        <span class="numbers__label">De jardines</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABITACIONES -->
+  <section class="rooms" id="habitaciones">
+    <div class="rooms__header">
+      <p class="section-label">Alojamiento</p>
+      <h2 class="section-title">Nuestras Suites</h2>
+      <p class="section-desc">Cada habitación es un universo propio. Techos pintados al fresco, mármoles de Macael y
+        vistas que quitan el aliento.</p>
+    </div>
+    <div class="rooms__grid">
+
+      <article class="room-card room-card--featured">
+        <div class="room-card__img room-card__img--1">
+          <div class="room-card__badge">Suite Estelar</div>
+        </div>
+        <div class="room-card__body">
+          <h3>Suite Real</h3>
+          <p>180 m² de historia viva. Salón privado, terraza con piscina propia y vistas panorámicas al mar.</p>
+          <div class="room-card__footer">
+            <span class="room-card__price">desde <strong>1.850 €</strong>/noche</span>
+            <a href="#reservar" class="btn btn--outline">Reservar</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="room-card">
+        <div class="room-card__img room-card__img--2"></div>
+        <div class="room-card__body">
+          <h3>Suite Jardín</h3>
+          <p>Acceso privado a los jardines del s. XVIII. Bañera exenta de mármol y chimenea de época.</p>
+          <div class="room-card__footer">
+            <span class="room-card__price">desde <strong>680 €</strong>/noche</span>
+            <a href="#reservar" class="btn btn--outline">Reservar</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="room-card">
+        <div class="room-card__img room-card__img--3"></div>
+        <div class="room-card__body">
+          <h3>Suite Palomar</h3>
+          <p>En la planta alta del palacete. Techos originales, vigas de caoba y una vista ininterrumpida del
+            Mediterráneo.</p>
+          <div class="room-card__footer">
+            <span class="room-card__price">desde <strong>920 €</strong>/noche</span>
+            <a href="#reservar" class="btn btn--outline">Reservar</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCIAS -->
+  <section class="experiences" id="experiencias">
+    <div class="experiences__left">
+      <p class="section-label">Más allá del descanso</p>
+      <h2 class="section-title">Experiencias<br /><em>únicas</em></h2>
+      <p class="section-desc">Diseñamos momentos irrepetibles adaptados a cada huésped. Desde catas de vinos andaluces
+        hasta escapadas privadas en velero.</p>
+      <a href="#contacto" class="btn btn--primary">Solicitar experiencia</a>
+    </div>
+    <div class="experiences__right">
+      <div class="exp-card" data-num="01">
+        <h4>Cata de Vinos Privada</h4>
+        <p>Con sumiller exclusivo en nuestra bodega del siglo XVI.</p>
+      </div>
+      <div class="exp-card" data-num="02">
+        <h4>Velero Privado al Atardecer</h4>
+        <p>Navega frente a Marbella con canapés y champán.</p>
+      </div>
+      <div class="exp-card" data-num="03">
+        <h4>Spa & Hammam Andaluz</h4>
+        <p>Rituales de baño inspirados en la tradición árabe.</p>
+      </div>
+      <div class="exp-card" data-num="04">
+        <h4>Chef en tu Suite</h4>
+        <p>Cena íntima preparada en tu habitación por nuestro chef.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GASTRONOMIA -->
+  <section class="gastro" id="gastronomia">
+    <div class="gastro__bg"></div>
+    <div class="gastro__content">
+      <p class="section-label" style="color: var(--gold-light);">Restaurante</p>
+      <h2 class="section-title" style="color: #fff;">El Patio</h2>
+      <p class="gastro__desc">Una estrella Michelin entre columnas de mármol y naranjos en flor. Cocina andaluza de
+        vanguardia del chef Rafael Montero.</p>
+      <div class="gastro__horarios">
+        <div>
+          <strong>Desayuno</strong>
+          <span>8:00 — 11:30</span>
+        </div>
+        <div>
+          <strong>Almuerzo</strong>
+          <span>13:30 — 16:00</span>
+        </div>
+        <div>
+          <strong>Cena</strong>
+          <span>20:00 — 23:30</span>
+        </div>
+      </div>
+      <a href="#reservar" class="btn btn--gold">Reservar mesa</a>
+    </div>
+  </section>
+
+  <!-- TESTIMONIO -->
+  <section class="testimonial">
+    <div class="testimonial__inner">
+      <div class="testimonial__quote">"</div>
+      <blockquote>
+        El Palacio Velarde es uno de esos lugares que cambian tu manera de entender el lujo. No es lo que tienes, sino
+        cómo te hacen sentir.
+      </blockquote>
+      <cite>— Condé Nast Traveller, 2024</cite>
+    </div>
+  </section>
+
+  <!-- RESERVAR -->
+  <section class="booking" id="reservar">
+    <div class="booking__inner">
+      <p class="section-label">Reservas</p>
+      <h2 class="section-title">Planifica tu estancia</h2>
+      <form class="booking__form" onsubmit="handleBooking(event)">
+        <div class="booking__row">
+          <div class="form-group">
+            <label for="checkin">Llegada</label>
+            <input type="date" id="checkin" name="checkin" required />
+          </div>
+          <div class="form-group">
+            <label for="checkout">Salida</label>
+            <input type="date" id="checkout" name="checkout" required />
+          </div>
+          <div class="form-group">
+            <label for="suite">Suite</label>
+            <select id="suite" name="suite">
+              <option value="">Cualquier suite</option>
+              <option value="real">Suite Real</option>
+              <option value="jardin">Suite Jardín</option>
+              <option value="palomar">Suite Palomar</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="huespedes">Huéspedes</label>
+            <select id="huespedes" name="huespedes">
+              <option value="1">1 persona</option>
+              <option value="2" selected>2 personas</option>
+              <option value="3">3 personas</option>
+              <option value="4">4 personas</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Comprobar disponibilidad →</button>
+      </form>
+      <div class="booking__note">
+        ¿Prefieres hablar con nosotros? <a href="tel:+34952001234">+34 952 00 12 34</a> · Disponibles 24h
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO / FOOTER -->
+  <footer class="footer" id="contacto">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <span class="footer__symbol">✦</span>
+        <h3>Palacio Velarde</h3>
+        <p>Carretera de Ronda, km 4<br />Marbella, Málaga 29602</p>
+        <p><a href="tel:+34952001234">+34 952 00 12 34</a></p>
+        <p><a href="mailto:hola@palaciovelade.es">hola@palaciovelarde.es</a></p>
+      </div>
+      <div class="footer__links">
+        <h4>El hotel</h4>
+        <ul>
+          <li><a href="#">Historia</a></li>
+          <li><a href="#">Galería</a></li>
+          <li><a href="#">Prensa</a></li>
+          <li><a href="#">Sostenibilidad</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#">Spa & Wellness</a></li>
+          <li><a href="#">Eventos privados</a></li>
+          <li><a href="#">Concierge</a></li>
+          <li><a href="#">Traslados</a></li>
+        </ul>
+      </div>
+      <div class="footer__newsletter">
+        <h4>Newsletter</h4>
+        <p>Ofertas exclusivas y novedades del hotel.</p>
+        <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+          <input type="email" placeholder="tu@email.com" required />
+          <button type="submit">→</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2024 Palacio Velarde. Todos los derechos reservados.</span>
+      <div class="footer__legal">
+        <a href="#">Privacidad</a>
+        <a href="#">Cookies</a>
+        <a href="#">Aviso Legal</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
