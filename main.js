@@ -207,3 +207,21 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }
   });
 });
+
+
+/* --- BOTÓN SCROLL UP :) :) :) --- */
+// Creamos el botón, lo añadimos al DOM, le ponemos la flecha y su clase CSS
+const btn = document.createElement("button");
+document.body.appendChild(btn);
+btn.innerText = "↑";
+btn.classList.add("scroll-up");
+
+// Escuchamos el scroll: el botón se hace visible cuando el usuario baja más de 300px
+window.addEventListener("scroll", () => {
+  btn.classList.toggle("visible", window.scrollY > 300);
+}, { passive: true });
+
+// Al hacer cnpx serve .lic, sube suavemente hasta el top de la página
+btn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
